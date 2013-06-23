@@ -1,0 +1,35 @@
+* {margin:0;padding:0;}
+.clear {clear:both;}
+
+html {position: relative;min-height: 100%;}
+body {background:url(images/bg.png);font-family:Verdana;font-size:11px;color:#2a2a2a;overflow:hidden;}
+#wrapper {}
+#main {}
+#logo {margin:50px auto 0 auto;text-align:center;opacity:0.5;}
+#player  {position:absolute;bottom:0;width:100%;height:80px;background:#FBF7F7;box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);border-top:1px solid white;}
+#player li {float:left;}
+
+div.jp-playlist {position:absolute;bottom:80px;margin:0 0 15px 0;	}
+.jp-playlist li {float:left;width:220px;clear:left;background:#ffbe33;margin:5px 0 5px 20px;list-style:none;padding:5px 10px;position:relative;}
+.jp-playlist li:after{ 
+content:'';
+display:block;
+position:absolute;
+top:0px;
+left:-10px; /*should be set to -border-width x 2 */
+width:0;
+height:0;
+border-top: 10px solid #ffbe33;
+border-left: 15px solid transparent;
+}
+.jp-playlist li a {color:#3C413B;text-decoration:none;}
+
+#right {position:absolute;right:0;bottom:0;height:100%;}
+#right #songlistButton {width:25px;height:25px;float:right;margin-top:100%;color:white;line-height:25px;text-align:center;}
+#right #songlist {display:block;background:#4E999E;min-height:100%;float:right;width:220px;box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);}
+#songlist li {list-style: none;color:white;border-width:0 0 1px 0;border-style:solid;border-color:rgba(255,255,255,0.2);overflow:visible !important;}
+#songlist li .handleBar {cursor:pointer;padding:5px 2px 5px 10px;}
+
+#songlist li li, #songlist li:hover li {border:none;background:#4E999E;font-weight:normal;}
+#songlist li:hover {background:#ffbe33;margin-top:-1px;border-width:1px 0 1px 0;border-color:#ffbe33;font-weight:bold;
+box-shadow: 0px 0px 2px rgba(0,0,0,0.2)};
